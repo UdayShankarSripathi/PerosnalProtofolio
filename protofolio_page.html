@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protofilo</title>
+    <link href="prostyle1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="parallax">
+    <div id="header">
+        <div class="cont">
+            <nav>
+                <img src="photos/ph10.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#protofolio">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Engineering Student [E.C.E]</p>
+                <h1>Hi,I'm <span>Uday Shankar </span><br> From BVRIT
+                </h1>
+            </div>
+        </div>
+    </div>
+<!--.........about..........-->
+    <div id="about">
+        <div class="contain">
+            <div class="row">
+                <div class=" about-colu-1">
+                    <img src="photos/ph7.jpg">
+                </div>
+                <div class="about-colu-2">
+                    <h1 class="title">About Me</h1>
+                    <p class="cont">Hello and welcome! My name is Uday Shankar, and today I will be presenting the results of our Data 
+                    Analytics task for Social Buzz. We’ve worked on a comprehensive analysis of your data to uncover 
+                    valuable insights that can help Social Buzz capitalize on its growth. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-cont active-tab" id="skills" >
+                        <ul>
+                            <li><span>Html & css</span><br>Have a konownledge on html & css</li>
+                            <br>
+                            <li><span>Pyhton</span><br>Cleared the N.P.T.E.L with good score</li>
+                            <br>
+                            <li><span>C++</span><br>Strong command on D.S.A</li>
+                            <br>
+                            <li><span>SQL</span><br>Went through Oracle Databases</li>
+                            <br>
+                            <li><span>AI-ML</span><br>Student Member At NVIDIA-COE BVRIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont" id="projects" >
+                        <ul>
+                            <li><span>Predicting EV Charging Bheaviour</span><br>Developed an AI model to predict the
+                                 volts in given time</li>
+                            <br>
+                            <li><span>Snake game</span><br>Created using C++ concepts like Arrays,Loops & D.S.A</li>
+                            <br>
+                            <li><span>Movie Recommendation</span><br>Using AI-ML</li>
+                            <br>
+                            <li><span>Empolyee Attendance</span><br>Created Using SQL and Php</li>
+                            <br>
+                            <li><span>Protofolio</span><br>Usign HTML & CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont" id="Education">
+                        <ul>
+                            <li><span>B.Tech</span><br>B V Raju Insitute of Technology Narsapur</li>
+                            <br>
+                            <li><span>Intermediate</span><br>Sri Chaitanya Colleage HYD</li>
+                            <br>
+                            <li><span>UpTo 10th</span><br>Sri Vyshnavi High School Kodad</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------protofolio--------
+<div id="protofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+    </div>
+</div>-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-cont");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+<!--........more ........-->
+<div id="more">
+    <div class="containeer">
+        <h1 class="sub-title" >
+            MORE ABOUT ME
+        </h1>
+        <div class="list">
+        <div>
+            <h2>Achievements</h2>
+            won different quiz compitetions,fun-events,completed various certification courses on platforms like coursera,congitiveclass..etc.. 
+            </p>
+            <a href="#">Know More</a>
+        </div>
+        <div>
+            <h2>Coding</h2>
+            <p>Sloved nearly 250 DSA probelms on coding platforms like codechef leetcode in c++ and python </p>
+            <a href="#">Know More</a>
+        </div>
+        <div>
+            <h2>Paper Selection</h2>
+            <p>My Project (Predicting EV Charging Behaviour) paper was selected in S.I.H hackaton </p>
+            <a href="#">Know More</a>
+        </div>
+        </div>
+        
+    </div>
+</div>
+<!---------protofolio----------->
+<div id="protofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photos/ph13.jpg">
+                <div class="layer">
+                    <h3>Predicting Ev Charging
+                    </h3>
+                    <p> Used to predict Ev Charging Using AI-Models </p>
+                    <a href="#">Link</a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="photos/ph18.jpg">
+                <div class="layer">
+                <h3>Predicting Ev Charging
+                </h3>
+                <p> Used to predict Ev Charging Using AI-Models .Used to predict Ev Charging Using AI-Models.
+                    Used to predict Ev Charging Using AI-Models</p>
+                <a href="#">Link</a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="photos/ph20.jpg">
+                <div class="layer">
+                    <h3>Predicting Ev Charging
+                    </h3>
+                    <p> Used to predict Ev Charging Using AI-Models </p>
+                    <a href="#">Link</a>
+                    </div>
+             </div> 
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+  <!--------Contact-------->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Sripathiuday@gmail.com</p>
+                <p>+91-9392594492</p>
+                <div class="social-icons">
+                    <a href="#">Linkedin
+                    </a>
+                    <a href="#">Instagram
+                    </a>
+                    <a href="#">Facebook</a>
+                </div>
+                <a href="website/MY-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your email" required>
+                    <textarea name="Meassage" id="" rows="6" placeholder="Your Meassage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &#169; Uday Shankar.</p>
+    </div>
+  </div> 
+</div>    
+</body>
+</html>
